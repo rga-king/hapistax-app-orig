@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@800&family=Cabin+Sketch:wght@700&family=Ubuntu+Mono&display=swap');
+
+
+.hapi {
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 6rem;
+  color: #93c47d;
+}
+
+.stax {
+  font-family: 'Baloo 2', cursive;
+  font-size: 6rem;
+  color: #6aa84f;
+  /* line-height: 0; */
+}
+
+.logo {
+  margin: 0;
+  padding: 0;
+}
+
+.info {
+  font-family: 'Ubuntu Mono', monospace;
+  color: #999;
+}
+
+p.info {
+  color: #a64d79;
+}
+
+.at {
+  color: #6aa84f;
+}
+
+.info > h2 {
+  display: inline;
+}
+
+.portfolio {
+  margin-top: 50px;
+  display: flex;
+  font-family: 'Ubuntu Mono', monospace;
+  margin-bottom: 50px;
+}
+
+.portfolio-entry {}
+
+.portfolio-entry > h4 {
+  /* font-family: 'Ubuntu Mono', monospace; */
+}
+
+.portfolio-entry > img {
+  width: 600px;
+  height: auto;
+  border: 5px solid #6aa84f;
+  border-radius: 5px;
+  margin-right: 40px;
+}

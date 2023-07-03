@@ -1,15 +1,69 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
+import main from '../styles/Main.module.css';
+import Image from 'next/image';
+
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>HapiSTAX</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
+      <header>
+        <h1 className={main.logo}>
+          <span className={main.hapi}>Hapi</span>
+          <span className={main.stax}>STAX</span>
+        </h1>        
+        <div className={main.info}>
+          <h2 className={main.info}>ROBIN KING</h2>
+          <span>. </span>
+          <h2>WEB DESIGN & DEVELOPMENT</h2>
+          <span>.</span>
+          <h3>BASED IN HARPENDEN <span>, </span> HERTS&nbsp;.</h3>
+        </div>
+
+      <p className={main.info}>staxhappy<span className={main.at}>@</span>gmail.com</p>     
+    </header>
+
+    <main>
+      <div className={main.portfolio}>
+
+      <div className={main['portfolio-entry']}>
+          <h4>elizabethcoventry.com</h4>
+          <Image
+            src='/images/ec_website.png'
+            width={600}
+            height={319}
+          />
+          <p>TECH STACK </p>
+          <p>FRONTEND: NEXT JS / REACT / AWS AMPLIFY</p>
+          <p>BACKEND: AWS API GATEWAY / AWS LAMBDA / AWS DYNAMO DB</p>
+          <p>STATUS: IN DEVELOPMENT</p>
+        </div>
+
+        <div className={main['portfolio-entry']}>
+          <h4>around-britain.uk</h4>
+          <Image
+            src='/images/ab_website.png'
+            width={600}
+            height={319}
+          />          <p>TECH STACK </p>
+          <p>FRONTEND: NEXT JS / REACT / AWS AMPLIFY</p>
+          <p>BACKEND: AWS API GATEWAY / AWS LAMBDA / AWS DYNAMO DB</p>
+          <p>STATUS: IN DEVELOPMENT</p>
+        </div>
+
+      </div>      
+    </main>
+
+    <footer>
+      &copy; 2023 Robin King
+    </footer>
+
+      {/* <main>
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
@@ -109,7 +163,7 @@ export default function Home() {
         * {
           box-sizing: border-box;
         }
-      `}</style>
+      `}</style> */}
     </div>
   )
 }
