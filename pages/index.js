@@ -32,7 +32,7 @@ export default function Home() {
       <div className={main.portfolio}>
 
       <div className={main['portfolio-entry']}>
-          <h4>elizabethcoventry.com</h4>
+          <h4>www.elizabethcoventry.com</h4>
           <Image
             src='/images/ec_website.png'
             width={600}
